@@ -1,0 +1,19 @@
+function DCM = RotationMatrix321(attitude321)
+%{
+Contributor(s):
+Created: 00/00/0000
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Goals/Purpose: Use the Euler angles for the 3-2-1 rotation sequence to 
+        calculate the associated DCM.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Inputs: attitude321: 3 x 1 vector with the 3-2-1 Euler angles in the 
+form attitude321 = [𝛼𝛼, 𝛽𝛽, 𝛾𝛾] 
+T (In ASEN 3728 notation, this would be equivalent to [𝜙𝜙,𝜃𝜃,𝜓𝜓] T).
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Outputs: DCM: the rotation matrix calculated from the Euler angles.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%}
+
+
+end
+
