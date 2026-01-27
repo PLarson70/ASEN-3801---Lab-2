@@ -7,8 +7,8 @@ Created: 00/00/0000
         calculate the associated DCM.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Inputs: attitude321: 3 x 1 vector with the 3-2-1 Euler angles in the 
-form attitude321 = [𝛼𝛼, 𝛽𝛽, 𝛾𝛾] 
-T (In ASEN 3728 notation, this would be equivalent to [𝜙𝜙,𝜃𝜃,𝜓𝜓] T).
+form attitude321 = [𝛼𝛼, 𝛽𝛽, 𝛾𝛾]' 
+ (In ASEN 3728 notation, this would be equivalent to [𝜙𝜙,𝜃𝜃,𝜓𝜓]').
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - Outputs: DCM: the rotation matrix calculated from the Euler angles.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
