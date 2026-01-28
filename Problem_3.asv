@@ -13,17 +13,18 @@ the plotting best practices presented in Lab 1.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 %}
 % Get data (Frame E)
-filename = ;
-[t_vec, av_pos_inert, av_att, tar_pos_inert, tar_att] = LoadASPENData(filename);
+filename = '3801_Sec003_Test3.csv';
+[t_vec, av_pos_inert_Eframe, av_att, tar_pos_inert_Eframe, tar_att] = LoadASPENData(filename);
 
 % Convert E -> N Frame
 % 𝑒1̂ = 𝚤𝚤1̂ , 𝑒𝑒̂ 2 = −𝚤𝚤2̂ , and 𝑒𝑒̂ 3 = −𝚤3
+av_pos_inert_Nframe =  [av_pos_inert_Eframe(:,1),av_pos_inert_Eframe(:,)
 
 
 % Plot
 figure("Name","Problem_3")
 hold on
-plot3()
+plot3(av_pos_inert)
 view(45,45)
 xlabel('i hat _1')
 ylabel('i hat _2')

@@ -13,23 +13,26 @@ the plotting best practices presented in Lab 1.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 %}
 % Get data (Frame E)
-filename = ;
-[t_vec, av_pos_inert, av_att, tar_pos_inert, tar_att] = LoadASPENData(filename);
+filename = '3801_Sec003_Test3.csv';
+[t_vec, av_pos_inert_Eframe, av_att, tar_pos_inert_Eframe, tar_att] = LoadASPENData(filename);
 
 % Convert E -> N Frame
 % 𝑒1̂ = 𝚤𝚤1̂ , 𝑒𝑒̂ 2 = −𝚤𝚤2̂ , and 𝑒𝑒̂ 3 = −𝚤3
-
+av_pos_inert_Nframe =  [av_pos_inert_Eframe(:,1),-av_pos_inert_Eframe(:,2), -av_pos_inert_Eframe(:,3)];
+tar_pos_inert_Nframe =  [tar_pos_inert_Eframe(:,1),-tar_pos_inert_Eframe(:,2), -tar_pos_inert_Eframe(:,3)];
 
 
 % Plot
 figure("Name","Problem_3")
 hold on
-plot3()
-view(45,45)
-xlabel('i hat _1')
-ylabel('i hat _2')
-zlabel('i hat _3')
+plot3(av_pos_inert_Nframe(:,1),av_pos_inert_Nframe(:,2),av_pos_inert_Nframe(:,3),Color='b',LineWidth=1.5)
+plot3(tar_pos_inert_Nframe(:,1),tar_pos_inert_Nframe(:,2),tar_pos_inert_Nframe(:,3),Color='r',LineWidth=1.5,LineStyle='--')
+view(164.2968, 34.9023)
+xlabel('$$\hat{i}_1$$','Interpreter','Latex')
+ylabel('$$\hat{i}_2$$','Interpreter','Latex')
+zlabel('$$\hat{i}_3$$','Interpreter','Latex')
 legend('AV','Target')
+title('3D position plot')
 hold off
 
 
