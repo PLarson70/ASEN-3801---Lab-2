@@ -28,5 +28,7 @@ function [t_vec, av_pos_inert, av_att, tar_pos_inert, tar_att] = LoadASPENData(f
     av_att = data(:, 8:10);
     tar_pos_inert = data(:,5:7);
     tar_att = data(:,2:4);
-
+    
+    [av_pos_inert, av_att, tar_pos_inert, tar_att] = ConvertASPENData(av_pos_inert, av_att, tar_pos_inert, tar_att);
+    
 end
