@@ -20,18 +20,12 @@ pos_relative = tar_pos_inert_Eframe - av_pos_inert_Eframe;
 
 %% Plot
 figure(Name="Problem 6")
-sgtitle("Relative Position in E-Frame")
 hold on
 subplot(2,2,1)
+title("")
 plot(t_vec,pos_relative(:,1))
-title("x-position relative")
-
 subplot(2,2,2)
 plot(t_vec,pos_relative(:,2))
-title("y-position relative")
-
 subplot(2,2,3)
 plot(t_vec,pos_relative(:,3))
-title("z-position relative")
-
 hold off
