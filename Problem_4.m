@@ -10,7 +10,7 @@ subplot(3,1,1)
     plot(t_vec, av_pos_inert(:,1), 'b', 'LineWidth', 1.5);
     plot(t_vec, tar_pos_inert(:,1), 'r', 'LineWidth', 1.5);
     grid on;
-    xlabel('Time [s]');
+    xlabel('Time [ms]');
     ylabel('x_E [mm]');
     %legend('Drone', 'Target', 'Location','best');
    
@@ -20,7 +20,7 @@ subplot(3,1,2)
     plot(t_vec, av_pos_inert(:,2),'b','LineWidth',1.5);
     plot(t_vec,tar_pos_inert(:,2), 'r','LineWidth',1.5);
     grid on;
-    xlabel('Time [s]');
+    xlabel('Time [ms]');
     ylabel('y_E [mm]');
     
 
@@ -30,7 +30,7 @@ subplot(3,1,3)
     plot(t_vec, av_pos_inert(:,3),'b','LineWidth',1.5);
     plot(t_vec,tar_pos_inert(:,3), 'r','LineWidth',1.5);
     grid on;
-    xlabel('Time [s]');
+    xlabel('Time [ms]');
     ylabel('z_E [mm]');
 
 legend('Drone', 'Target', 'Location','best');
@@ -48,7 +48,7 @@ subplot(3,1,1)
     plot(t_vec, deg_av_att(:,1),'b','LineWidth',1.5);
     plot(t_vec,deg_tar_att(:,1), 'r','LineWidth',1.5);
     grid on;
-    xlabel('Time [s]');
+    xlabel('Time [ms]');
     ylabel('\alpha [deg]');
 
 subplot(3,1,2)
@@ -57,7 +57,7 @@ subplot(3,1,2)
     plot(t_vec, deg_av_att(:,2),'b','LineWidth',1.5);
     plot(t_vec,deg_tar_att(:,2), 'r','LineWidth',1.5);
     grid on;
-    xlabel('Time [s]');
+    xlabel('Time [ms]');
     ylabel('\beta [deg]');
     legend('Drone', 'Target','Location','northwest');
 
@@ -67,7 +67,7 @@ subplot(3,1,3)
     plot(t_vec, deg_av_att(:,3),'b','LineWidth',1.5);
     plot(t_vec,deg_tar_att(:,3), 'r','LineWidth',1.5);
     grid on;
-    xlabel('Time [s]');
+    xlabel('Time [ms]');
     ylabel('\gamma [deg]');
 
 sgtitle('Problem 4: 3-2-1 Euler Angles in Frame E vs Time');
