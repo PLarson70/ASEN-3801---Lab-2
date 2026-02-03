@@ -1,4 +1,17 @@
-%% Problem 4
+%{ Problem 4
+Contributor(s): Paris Larson
+Course number: ASEN 3801
+File name: Problem_4.m
+Created: 02/01/2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Goal: Plot the position vector in frame E (xE,yE,zE) as a function of time of the aerospace
+        vehicle and target, as well as plot the 3-2-1 Euler angles (in degrees) 
+        as a function of time of the aerospace vehicle and target.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Methodology: Plot the components of the position vector as a function of time / 3-2-1 Euler angles. One
+subplot for each x,y,z component on one figure and one subplot for alpha, beta, gamma component on the aother figure.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+%}
 filename = '3801_Sec003_Test3.csv';
 
 [t_vec, av_pos_inert, av_att, tar_pos_inert, tar_att] = LoadASPENData(filename);
@@ -71,3 +84,4 @@ subplot(3,1,3)
     ylabel('\gamma [deg]');
 
 sgtitle('Problem 4: 3-2-1 Euler Angles in Frame E vs Time');
+
