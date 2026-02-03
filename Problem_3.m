@@ -28,9 +28,9 @@ hold on
 plot3(av_pos_inert_Nframe(:,1),av_pos_inert_Nframe(:,2),av_pos_inert_Nframe(:,3),Color='b',LineWidth=1.5)
 plot3(tar_pos_inert_Nframe(:,1),tar_pos_inert_Nframe(:,2),tar_pos_inert_Nframe(:,3),Color='r',LineWidth=1.5,LineStyle='--')
 view(164.2968, 34.9023)
-xlabel('$$\hat{i}_1$$','Interpreter','Latex')
-ylabel('$$\hat{i}_2$$','Interpreter','Latex')
-zlabel('$$\hat{i}_3$$','Interpreter','Latex')
+xlabel('$$\hat{i}_1$$ [m]','Interpreter','Latex')
+ylabel('$$\hat{i}_2$$ [m]','Interpreter','Latex')
+zlabel('$$\hat{i}_3$$ [m]','Interpreter','Latex')
 legend('AV','Target')
 title('3D position plot')
 hold off

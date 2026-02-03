@@ -23,15 +23,23 @@ figure(Name="Problem 6")
 sgtitle("Relative Position in E-Frame")
 hold on
 subplot(2,2,1)
-plot(t_vec,pos_relative(:,1))
+plot(t_vec,pos_relative(:,1),"Color",'b',LineWidth=1)
 title("x-position relative")
+ylabel("Distance [m]")
+xlabel("Time [s]")
+ylim([-5 5])
 
 subplot(2,2,2)
-plot(t_vec,pos_relative(:,2))
+plot(t_vec,pos_relative(:,2),"Color",'b',LineWidth=1)
 title("y-position relative")
+ylabel("Distance [m]")
+xlabel("Time [s]")
+ylim([-5 5])
 
 subplot(2,2,3)
-plot(t_vec,pos_relative(:,3))
+plot(t_vec,pos_relative(:,3),"Color",'b',LineWidth=1)
 title("z-position relative")
-
+ylabel("Distance [m]")
+xlabel("Time [s]")
+ylim([-5 5])
 hold off
